@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EF_DBLibrary\EF_DBLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
