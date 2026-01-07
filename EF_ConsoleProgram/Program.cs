@@ -15,6 +15,9 @@ class Program
         var connectionString = _configuration.GetConnectionString("EFDbConnection");
         Console.WriteLine($"Connection String: {connectionString}");
         //...additional code coming soon will go here
+        var optionsBuilder = new DbContextOptionsBuilder<EFDbContext>();
+        optionsBuilder.UseSqlServer(connectionString);
+        using var context = new EFDbContext(optionsBuilder.Options);
         Console.WriteLine("done");
     }
 
