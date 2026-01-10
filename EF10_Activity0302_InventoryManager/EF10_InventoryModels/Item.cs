@@ -10,8 +10,4 @@ public class Item
     [Required]
     [StringLength(100)]
     public string Name {get; set;}
-
-    [Required]
-    [DefaultValue(true)]
-    public bool IsActive {get; set;}
 }
